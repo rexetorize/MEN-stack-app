@@ -4,7 +4,8 @@
   "description": "A Moongose, Exp and Node.js app",
   "main": "server.js",
   "scripts": {
-    "test": "node server.js"
+    "start": "node server.js",
+    "devStart": "nodemon server.js"
   },
   "author": "Rex",
   "license": "ISC",
