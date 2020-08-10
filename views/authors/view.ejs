@@ -1,0 +1,15 @@
+<br />
+<h1><%=author.name%></h1>
+
+<% if(books.length > 0){ %>
+<br />
+<h3>Books By this Author :</h3>
+
+<% books.forEach(book=>{ %>
+
+<img src="<%=book.coverImagePath %> " alt="" height="150" width="100" />
+<% }) %> <% } %>
+<br />
+<% if(books.length === 0){ %>
+<h1>No Books By This Author So Far</h1>
+<% } %>

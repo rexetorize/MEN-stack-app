@@ -1,0 +1,11 @@
+<h1>
+  Author cannot be REMOVED coz that author still has books associated to the
+  DataBase
+</h1>
+<br />
+
+<h3>Books By <%=author.name %></h3>
+<% books.forEach(book=>{ %>
+
+<img src="<%=book.coverImagePath %> " alt="" height="150" width="100" />
+<% }) %>

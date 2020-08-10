@@ -1,0 +1,103 @@
+:root {
+  --form-label-font-size: 1.2rem;
+  --form-input-background-color: hsl(var(--color-base-hue), 100%, 31%);
+  --form-input-border-color: hsl(var(--color-base-hue), 100%, 50%);
+  --form-input-border-color-light: hsl(var(--color-base-hue), 100%, 80%);
+}
+
+.from-row {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.from-item {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.from-item:first-child {
+  margin-left: 0;
+}
+
+.from-item-no-grow {
+  flex-grow: 0;
+}
+
+.from-item > label {
+  font-size: var(--form-label-font-size);
+  margin-bottom: 0.2rem;
+}
+
+.from-item input,
+.from-item select,
+.from-item textarea {
+  box-sizing: border-box;
+  height: 2rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid var(--form-input-border-color);
+  background-color: var(--form-input-background-color);
+  color: var(--color-text-light);
+  font-size: 1rem;
+  font-weight: normal;
+  font-family: sans-serif;
+  outline: none;
+}
+
+.from-item > textarea {
+  height: 100%;
+  resize: none;
+}
+
+.filepond--root {
+  box-sizing: border-box;
+
+  font-family: sans-serif;
+  margin-bottom: 0;
+
+  font-size: small;
+}
+
+.filepond--panel-root {
+  background-color: var(--form-input-background-color);
+  border: 1px solid var(--form-input-border-color);
+}
+
+.filepond--drop-label {
+  color: var(--color-text-light);
+  font-size: inherit;
+}
+
+.from-item input:focus,
+.from-item select:focus,
+.from-item textarea:focus {
+  border-color: var(--form-input-border-color-light);
+}
+
+.from-row-end {
+  justify-content: flex-end;
+}
+.from-items {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 0;
+}
+
+.from-items input,
+.from-items select,
+.from-items textarea {
+  box-sizing: border-box;
+  height: 2rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid var(--form-input-border-color);
+  background-color: var(--form-input-background-color);
+  color: var(--color-text-light);
+  font-size: 1rem;
+  font-weight: normal;
+  font-family: sans-serif;
+  outline: none;
+}
