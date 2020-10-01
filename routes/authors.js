@@ -63,7 +63,7 @@ router.get("/:id/edit", async (req, res) => {
   }
 });
 
-router.put("/:id", async (req, res) => {
+router.patch("/:id", async (req, res) => {
   let author;
   try {
     author = await Author.findById(req.params.id);
